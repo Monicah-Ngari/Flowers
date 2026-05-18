@@ -88,6 +88,23 @@ button[onclick="changeName()"]:hover {
     background: #2d3748;
     box-shadow: 0 8px 25px rgba(74, 85, 104, 0.5);
 }
+.flowers li.color1 {
+    color: hsl(0, 92%, 50%);
+    font:caption;
+}
+
+.flowers li.color2 {
+    color: hwb(311 5% 7%);
+    font:caption;
+}
+.flowers li.color3 {
+    font:caption;
+}
+
+.flowers li.color4 {
+    color: hsl(49, 84%, 57%);
+    font:caption;
+}
 .myname {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
@@ -131,6 +148,18 @@ img:hover {
 }
 .flowers li:last-child, .sunset li:last-child {
     border-bottom: none;
+}
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
 }
 em {
     font-style: normal;
